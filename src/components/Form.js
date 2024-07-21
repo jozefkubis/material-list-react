@@ -6,27 +6,25 @@ const Form = () => {
     useMaterialList()
 
   return (
-    <div>
-      <form className="form">
-        <input
-          className="searching-input"
-          onClick={() => {
-            setFilteredItems([])
-            setSearchingItem("")
-          }}
-          type="text"
-          placeholder="Search for item"
-          value={searchingItem}
-          onChange={(e) => setSearchingItem(e.target.value)}
-        />
-        <input
-          className="deleteAll-btn"
-          type="submit"
-          value="DeleteAll"
-          onClick={() => setPrintedItems([])}
-        />
-      </form>
-    </div>
+    <form className="form">
+      <input
+        className="searching-input"
+        onClick={() => {
+          setFilteredItems([])
+          setSearchingItem("")
+        }}
+        type="text"
+        placeholder="Search for item"
+        value={searchingItem}
+        onChange={(e) => setSearchingItem(e.target.value)}
+      />
+      <input
+        className="deleteAll-btn"
+        type="submit"
+        value="DeleteAll"
+        onClick={() => setPrintedItems([])}
+      />
+    </form>
   )
 }
 

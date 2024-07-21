@@ -271,7 +271,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   touch-action: pan-y;
   position: absolute;
   top: 80px;
@@ -292,7 +292,7 @@ body {
 .printed-items {
   height: 400px;
   background-color: #dee0d5;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
 }
